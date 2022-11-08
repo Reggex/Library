@@ -3,7 +3,8 @@ using Domain;
 
 var authors = new HashSet<Author>
 {
-    new Author("Чехов", "Антон", "Павлович")
+    new Author("Чехов", "Антон", "Павлович"),
+    new Author("Чехонте", "Антоша", null)
 };
 
 var publisher1 = new Publisher("Москва", 1990);

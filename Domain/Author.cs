@@ -1,16 +1,26 @@
 ﻿
 namespace Domain
 {
-
+    /// <summary>
+    /// Автор
+    /// </summary>
     public class Author
     {
-
+        /// <summary>
+        /// Идентификатор
+        /// </summary>
         public Guid Id { get; }
-
+        /// <summary>
+        /// Имя
+        /// </summary>
         public string FirstName { get; }
-
+        /// <summary>
+        /// Фамилия
+        /// </summary>
         public string LastName { get; }
-
+        /// <summary>
+        /// Отчество
+        /// </summary>
         public string? MiddleName { get; }
 
         public ISet<Book> Books { get; } = new HashSet<Book>();

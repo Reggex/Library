@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
+    /// <summary>
+    /// Издательство
+    /// </summary>
     public class Publisher
     {
 
@@ -35,11 +38,19 @@ namespace Domain
             this.Year = year;
             this.Books = books;
         }
-
+        /// <summary>
+        /// Идентификатор
+        /// </summary>
         public Guid Id { get; }
 
+        /// <summary>
+        /// Наименование
+        /// </summary>
         public string Title { get; }
 
+        /// <summary>
+        /// Год
+        /// </summary>
         public int Year { get; }
 
         public ISet<Book> Books { get; }
